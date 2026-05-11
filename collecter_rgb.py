@@ -33,7 +33,7 @@ for geste in GESTES:
             ret, frame = cap.read()
             if not ret: break
             
-            # --- Le Recadrage Mathématique (ROI) ---
+            # Le Recadrage Mathématique (ROI)
             h, w = frame.shape[:2]
             taille_roi = 224
             y1 = int(h/2 - taille_roi/2)
@@ -46,7 +46,7 @@ for geste in GESTES:
             save_path = os.path.join(DATA_PATH, geste, str(sequence), f"{frame_num}.jpg")
             cv2.imwrite(save_path, roi)
             
-            # --- Affichage UI ---
+            # Affichage UI
             cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 0), 2)
             
             # Affichage du squelette pour le retour visuel

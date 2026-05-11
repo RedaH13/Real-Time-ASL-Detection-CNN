@@ -42,7 +42,7 @@ for geste in GESTES:
                 
             total_images += 1
 
-print("\n--- RÉSULTATS ---")
+print("\nRÉSULTATS")
 print(f"Images valides : {total_images} / 8100")
 print(f"Erreurs        : {erreurs}")
 

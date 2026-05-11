@@ -35,7 +35,7 @@ prediction_buffer = deque(maxlen=5)
 
 print("✓ Caméra ouverte :", cap.isOpened())
 
-# ── 2. BOUCLE PRINCIPALE ──
+# BOUCLE PRINCIPALE
 while cap.isOpened():
     ret, frame = cap.read()
     if not ret: break
