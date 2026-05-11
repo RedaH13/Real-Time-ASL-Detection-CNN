@@ -1,0 +1,8 @@
+.venv/
+.vscode/
+
+models/
+*.h5
+
+data_rgb/
+*.jpg
